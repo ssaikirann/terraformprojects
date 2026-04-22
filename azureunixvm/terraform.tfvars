@@ -1,0 +1,15 @@
+resource_group_name = "myResourceGroup"
+location = "East US"
+vnet_name = "myVNet"
+vnet_address_space = ["10.0.0.0/16"]
+subnet_name = "mySubnet"
+subnet_address_prefixes = ["10.0.1.0/24"]
+nic_name = "myNIC"
+vm_name = "myVM"
+vm_size = "Standard_DS1_v2"
+admin_username = "azureuser"
+ssh_public_key_path = "~/.ssh/id_rsa.pub"
+image_publisher = "Canonical"
+image_offer = "0001-comics-ubuntu-server-jammy"
+image_sku = "22_04-lts"
+image_version = "latest"

@@ -1,0 +1,7 @@
+resource_group_name = "myWebAppRG"
+location = "East US"
+asp_name = "myAppServicePlan"
+os_type = "Linux"
+sku_name = "B1"
+wa_name = "myWebApp"
+php_version = "8.2"

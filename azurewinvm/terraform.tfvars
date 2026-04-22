@@ -1,0 +1,15 @@
+resource_group_name = "myWinResourceGroup"
+location = "East US"
+vnet_name = "myWinVNet"
+vnet_address_space = ["10.0.0.0/16"]
+subnet_name = "myWinSubnet"
+subnet_address_prefixes = ["10.0.1.0/24"]
+nic_name = "myWinNIC"
+vm_name = "myWinVM"
+vm_size = "Standard_DS1_v2"
+admin_username = "azureuser"
+admin_password = "P@ssw0rd123!"
+image_publisher = "MicrosoftWindowsServer"
+image_offer = "WindowsServer"
+image_sku = "2022-Datacenter"
+image_version = "latest"

@@ -1,0 +1,10 @@
+resource_group_name = "myContainerAppRG"
+location = "East US"
+law_name = "myLAW"
+cae_name = "myCAE"
+ca_name = "myContainerApp"
+container_name = "mycontainer"
+container_image = "nginx:latest"
+cpu = "0.25"
+memory = "0.5Gi"
+target_port = 80
