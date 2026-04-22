@@ -23,3 +23,17 @@ resource "azurerm_linux_web_app" "wa" {
     }
   }
 }
+
+resource "null_resource" "zip_deploy" {
+  depends_on = [azurerm_linux_web_app.linux]
+
+  provisioner "local-exec" {
+    command = <<EOT
+      az webapp deployment source config-zip \
+        --resource-group ${azurerm_resource_group.webapp_rg.name} \
+        --name ${azurerm_linux_web_app.linux.name} \
+        --src example.zip
+    EOT
+  }
+}
+
