@@ -25,7 +25,7 @@ resource "azurerm_linux_web_app" "wa" {
 }
 
 resource "null_resource" "zip_deploy" {
-  depends_on = [azurerm_linux_web_app.linux]
+  depends_on = [azurerm_linux_web_app.wa]
 
   provisioner "local-exec" {
     command = <<EOT
